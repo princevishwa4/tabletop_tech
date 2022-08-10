@@ -1,5 +1,5 @@
 .detail_of_players .container {
-    width: 80%;
+    width: 50%;
     margin-bottom: 40px;
 }
 
@@ -8,9 +8,8 @@
 }
 
 .detail_of_players .child_contaner {
-    padding: 15px !important;
     display: flex !important;
-    justify-content: center;
+    justify-content: center !important;
 }
 
 .detail_of_players .item_container {
@@ -19,9 +18,17 @@
 }
 
 .detail_of_players .text>* {
+    padding-left: 10px;
     margin-bottom: 10px !important;
+    box-shadow: none !important;
     font-size: 20px !important;
     text-align: left;
+}
+
+.detail_of_players .text {
+    -webkit-box-shadow: 4px 4px 11px 0px rgba(166, 164, 166, 1);
+    -moz-box-shadow: 4px 4px 11px 0px rgba(166, 164, 166, 1);
+    box-shadow: 4px 4px 11px 0px rgba(166, 164, 166, 1);
 }
 
 .detail_of_players .heading {

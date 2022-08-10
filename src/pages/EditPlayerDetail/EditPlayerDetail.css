@@ -14,3 +14,8 @@
     font-size: 30px !important;
     text-align: center;
 }
+
+.edit_players .heading_wrapper {
+    max-width: 350px;
+    margin: 40px auto 20px;
+}

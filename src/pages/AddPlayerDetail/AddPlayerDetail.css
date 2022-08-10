@@ -4,7 +4,7 @@
     margin-bottom: 50px;
 }
 
-.add_players .form_group > * {
+.add_players .form_group>* {
     margin: 15px 0 !important;
     text-align: left;
 }
@@ -13,4 +13,9 @@
     margin: 40px 0 20px !important;
     font-size: 30px !important;
     text-align: center;
+}
+
+.add_players .heading_wrapper {
+    max-width: 300px;
+    margin: 40px auto 20px;
 }

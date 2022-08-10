@@ -14,6 +14,9 @@ import Select from "@mui/material/Select";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 
+// MUI icons imports
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+
 // Routing imports
 import { useNavigate, useParams } from "react-router-dom";
 
@@ -165,7 +168,10 @@ const EditPlayerDetail = () => {
         pauseOnHover
       />
       <Box className="edit_players">
-        <Typography className="heading">Edit Player Details</Typography>
+        <Box className="heading_wrapper">
+          <ArrowBackIcon onClick={() => navigate(-1)} />
+          <Typography className="heading">Edit Player Details</Typography>
+        </Box>
         <Container component={Paper} className="container" elevation={3}>
           <FormGroup component={Paper} className="form_group">
             <FormControl fullWidth>

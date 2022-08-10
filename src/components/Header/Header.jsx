@@ -14,17 +14,17 @@ const Header = () => {
       <Toolbar>
         <Grid container spacing={2}>
           <Grid item xs={8} md={10} className="logo_wrapper">
-            <NavLink className="logo" exact to="/">
+            <NavLink className="logo" to="/">
               TableTop Tech
             </NavLink>
           </Grid>
           <Grid item xs={2} md={1}>
-            <NavLink className="tabs" exact to="/">
+            <NavLink className="tabs" to="/">
               Home
             </NavLink>
           </Grid>
           <Grid item xs={2} md={1}>
-            <NavLink className="tabs" exact to="/add">
+            <NavLink className="tabs" to="/add">
               Add
             </NavLink>
           </Grid>

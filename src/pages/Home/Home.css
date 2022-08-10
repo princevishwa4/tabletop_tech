@@ -2,8 +2,20 @@ thead th {
     font-weight: bold !important;
 }
 
+.home_heading_wrapper {
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto 20px;
+}
+
+.form_wrapper {
+    min-width: 250px !important;
+}
+
 p {
-    margin: 25px 0 10px !important;
+    margin: 35px 0 10px !important;
     font-size: 2rem !important;
 }
 

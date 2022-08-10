@@ -3,8 +3,22 @@
   font-size: 0.8rem !important;
 }
 
+.heading_wrapper {
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .heading {
+  margin: 0 !important;
   font-size: 2rem !important;
   font-weight: 600 !important;
   text-align: center;
+}
+
+.heading_wrapper svg {
+  cursor: pointer;
 }

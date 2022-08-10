@@ -8,8 +8,11 @@ import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 
+// MUI icons imports
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+
 // Routing imports
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 // Services imports
 import { getPlayerDetail } from "../../services";
@@ -19,6 +22,7 @@ import "./DetailOfPlayer.css";
 const DetailOfPlayer = () => {
   const [playerDetail, setPlayerDetail] = React.useState([]);
   const params = useParams();
+  let navigate = useNavigate();
 
   React.useEffect(() => {
     const fetchPlayerDetails = async () => {
@@ -26,7 +30,7 @@ const DetailOfPlayer = () => {
       setPlayerDetail(data);
     };
     fetchPlayerDetails();
-  }, []);
+  }, [params.id]);
 
   const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
@@ -38,7 +42,10 @@ const DetailOfPlayer = () => {
   return (
     <>
       <Box className="detail_of_players">
-        <Typography className="heading">My Profile</Typography>
+        <Box className="heading_wrapper">
+          <ArrowBackIcon onClick={() => navigate(-1)} />
+          <Typography className="heading">My Profile</Typography>
+        </Box>
         <Container className="container">
           <Grid container className="child_container">
             <Grid item className="item_container">

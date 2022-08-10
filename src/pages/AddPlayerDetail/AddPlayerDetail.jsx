@@ -14,6 +14,9 @@ import Select from "@mui/material/Select";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 
+// MUI icons imports
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+
 // Routing imports
 import { useNavigate } from "react-router-dom";
 
@@ -153,7 +156,10 @@ const AddPlayerDetail = () => {
         pauseOnHover
       />
       <Box className="add_players">
-        <Typography className="heading">Add New Player</Typography>
+        <Box className="heading_wrapper">
+          <ArrowBackIcon onClick={() => navigate(-1)} />
+          <Typography className="heading">Add New Player</Typography>
+        </Box>
         <Container component={Paper} className="container" elevation={3}>
           <FormGroup component={Paper} className="form_group">
             <FormControl fullWidth>
