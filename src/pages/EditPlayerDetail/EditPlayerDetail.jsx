@@ -54,7 +54,7 @@ const EditPlayerDetail = () => {
       setPlayerDetail(data);
     };
     fetchPlayerDetails();
-  }, []);
+  }, [params.id]);
 
   const handleChange = (event) => {
     const { name, value } = event.target;

@@ -4,7 +4,7 @@
     margin-bottom: 50px;
 }
 
-.edit_players .form_group > * {
+.edit_players .form_group>* {
     margin: 15px 0 !important;
     text-align: left;
 }
