@@ -4,7 +4,7 @@ export const getAllPlayers = async () => {
   try {
     const { data } = await axios({
       method: "GET",
-      url: `${process.env.REACT_APP_BASE_URL}/all`,
+      url: `http://localhost:3001/players`,
     });
     return data;
   } catch (err) {
@@ -16,7 +16,7 @@ export const getPlayerDetail = async (id) => {
   try {
     const { data } = await axios({
       method: "GET",
-      url: `${process.env.REACT_APP_BASE_URL}/all/${id}`,
+      url: `http://localhost:3001/players/${id}`,
     });
     return data;
   } catch (err) {
@@ -28,7 +28,7 @@ export const addNewPlayer = async (playerData) => {
   try {
     const { data } = await axios({
       method: "POST",
-      url: `${process.env.REACT_APP_BASE_URL}/add`,
+      url: `http://localhost:3001/players`,
       body: playerData,
     });
     return data;
@@ -41,7 +41,7 @@ export const updatePlayer = async (playerData, id) => {
   try {
     const { data } = await axios({
       method: "POST",
-      url: `${process.env.REACT_APP_BASE_URL}/update/${id}`,
+      url: `http://localhost:3001/players/${id}`,
       body: playerData,
     });
     return data;
@@ -54,7 +54,7 @@ export const deletePlayer = async (id) => {
   try {
     const { data } = await axios({
       method: "DELETE",
-      url: `${process.env.REACT_APP_BASE_URL}/${id}`,
+      url: `http://localhost:3001/players/${id}`,
     });
     return data;
   } catch (err) {
