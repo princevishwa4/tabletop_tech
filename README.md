@@ -70,3 +70,20 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 # This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 # tabletop_tech
+
+This project is using a json server for managing the data and APIs.
+To run this project hit the command `npm run dev`
+
+Follow-Up Questions
+
+1. How long, in hours, did you spend on the test (not including learning)?
+   -> 6-8 hrs
+2. Did you have to learn any new languages/technologies? If so, which ones and what resources did you use for your learning?
+   -> Yes. I learned about concurrently package. I learned it from official website of npm packages.
+3. If you had more time, what further improvements or new features would you add?
+   -> a. Pagination
+   -> b. Bottom to Top scroll button
+4. What did you spend the most time on? What did you find most difficult?
+   -> Spending time was linear for me.
+5. How did you find the test overall? If you have any suggestions on how we can improve the test we’d love to hear them.
+   -> Overall test was quite good. I would suggest to include the profile image becasue handling profile image is little bit tricky part. That will be a good improvement.
