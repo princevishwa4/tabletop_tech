@@ -16,62 +16,64 @@ import "./EditPlayerDetail.css";
 const EditPlayerDetail = () => {
   return (
     <>
-      <Typography className="text">Edit Player Details</Typography>
-      <Container component={Paper} className="container" elevation={3}>
-        <FormGroup component={Paper} className="form_group">
-          <TextField
-            helperText=""
-            label="First Name"
-            name="first_name"
-            value="test"
-            // onChange={(event) => onValueChange(event)}
-          />
-          <TextField
-            helperText=""
-            label="Last Name"
-            name="last_name"
-            value="test"
-            // onChange={(event) => onValueChange(event)}
-          />
-          <TextField
-            helperText=""
-            label="Contact Number"
-            name="contact"
-            type="number"
-            value="123"
-            // onChange={(event) => onValueChange(event)}
-          />
-          <Box sx={{ minWidth: 120 }}>
-            <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label">
-                Game Session
-              </InputLabel>
-              <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                // value={age}
-                label="Age"
-                // onChange={handleChange}
-              >
-                <MenuItem value="Black Rain">Black Rain</MenuItem>
-                <MenuItem value="One Last Riddle">One Last Riddle</MenuItem>
-                <MenuItem value="The Burning Plague">
-                  The Burning Plague
-                </MenuItem>
-                <MenuItem value="The Sea Witch">The Sea Witch</MenuItem>
-                <MenuItem value="Tomb of Horrors">Tomb of Horrors</MenuItem>
-              </Select>
-            </FormControl>
-          </Box>
-          <Button
-            variant="contained"
-            color="primary"
-            // onClick={() => editUserDetails()}
-          >
-            Update
-          </Button>
-        </FormGroup>
-      </Container>
+      <Box className="edit_players">
+        <Typography className="text">Edit Player Details</Typography>
+        <Container component={Paper} className="container" elevation={3}>
+          <FormGroup component={Paper} className="form_group">
+            <TextField
+              helperText=""
+              label="First Name"
+              name="first_name"
+              value="test"
+              // onChange={(event) => onValueChange(event)}
+            />
+            <TextField
+              helperText=""
+              label="Last Name"
+              name="last_name"
+              value="test"
+              // onChange={(event) => onValueChange(event)}
+            />
+            <TextField
+              helperText=""
+              label="Contact Number"
+              name="contact"
+              type="number"
+              value="123"
+              // onChange={(event) => onValueChange(event)}
+            />
+            <Box sx={{ minWidth: 120 }}>
+              <FormControl fullWidth>
+                <InputLabel id="demo-simple-select-label">
+                  Game Session
+                </InputLabel>
+                <Select
+                  labelId="demo-simple-select-label"
+                  id="demo-simple-select"
+                  // value={age}
+                  label="Age"
+                  // onChange={handleChange}
+                >
+                  <MenuItem value="Black Rain">Black Rain</MenuItem>
+                  <MenuItem value="One Last Riddle">One Last Riddle</MenuItem>
+                  <MenuItem value="The Burning Plague">
+                    The Burning Plague
+                  </MenuItem>
+                  <MenuItem value="The Sea Witch">The Sea Witch</MenuItem>
+                  <MenuItem value="Tomb of Horrors">Tomb of Horrors</MenuItem>
+                </Select>
+              </FormControl>
+            </Box>
+            <Button
+              variant="contained"
+              color="primary"
+              // onClick={() => editUserDetails()}
+            >
+              Update
+            </Button>
+          </FormGroup>
+        </Container>
+      </Box>
     </>
   );
 };

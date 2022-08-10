@@ -1,5 +1,5 @@
 // Routing imports
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 // Custom components imports
 import Header from "../components/Header";
@@ -17,8 +17,8 @@ const Routing = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/add" element={<AddPlayerDetail />} />
-        <Route path="/profile/1" element={<DetailOfPlayer />} />
-        <Route path="/edit/1" element={<EditPlayerDetail />} />
+        <Route path="/profile/:id" element={<DetailOfPlayer />} />
+        <Route path="/edit/:id" element={<EditPlayerDetail />} />
       </Routes>
     </>
   );

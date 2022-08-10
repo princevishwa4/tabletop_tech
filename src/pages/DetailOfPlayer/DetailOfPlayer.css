@@ -1,32 +1,32 @@
-.container {
+.detail_of_players .container {
     width: 80%;
 }
 
-.form_group>* {
+.detail_of_players .form_group>* {
     margin: 20px 0 !important;
 }
 
-.child_contaner {
+.detail_of_players .child_contaner {
     display: flex !important;
     justify-content: space-between;
 }
 
-.item_container {
+.detail_of_players .item_container {
     max-width: 700px;
     width: 100%;
 }
 
-.text {
+.detail_of_players .text {
     height: 500px,
 }
 
-.text>* {
+.detail_of_players .text>* {
     margin-bottom: 10px !important;
     font-size: 20px !important;
     text-align: left;
 }
 
-.heading {
+.detail_of_players .heading {
     margin: 40px 0 !important;
     font-size: 30px !important;
     text-align: center;
