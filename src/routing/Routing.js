@@ -6,6 +6,7 @@ import Header from "../components/Header";
 
 // Pages imports
 import Home from "../pages/Home";
+import AddPlayerDetail from "../pages/AddPlayerDetail";
 import DetailOfPlayer from "../pages/DetailOfPlayer";
 import EditPlayerDetail from "../pages/EditPlayerDetail";
 
@@ -15,6 +16,7 @@ const Routing = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/add" element={<AddPlayerDetail />} />
         <Route path="/profile/1" element={<DetailOfPlayer />} />
         <Route path="/edit/1" element={<EditPlayerDetail />} />
       </Routes>

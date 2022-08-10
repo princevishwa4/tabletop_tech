@@ -1,0 +1,15 @@
+.container {
+    width: 50% !important;
+    padding: 10px 0 0 0;
+    margin-bottom: 50px;
+}
+
+.form_group > * {
+    margin: 20px 0 !important;
+}
+
+.text {
+    margin: 40px 0 20px !important;
+    font-size: 30px !important;
+    text-align: center;
+}
