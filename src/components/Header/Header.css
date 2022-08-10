@@ -1,0 +1,21 @@
+.header {
+    position: static !important;
+}
+
+.logo_wrapper {
+    text-align: left !important;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.tabs {
+    float: right;
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
