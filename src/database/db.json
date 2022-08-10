@@ -162,10 +162,11 @@
       "campaign_name": "Tomb of Horrors"
     },
     {
+      "first_name": "demo",
+      "last_name": "test",
+      "contact_number": "1234567890",
+      "campaign_name": "Tomb of Horrors",
       "id": 24
-    },
-    {
-      "id": 25
     }
   ]
 }

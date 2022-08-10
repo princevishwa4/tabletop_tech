@@ -29,7 +29,7 @@ export const addNewPlayer = async (playerData) => {
     const { data } = await axios({
       method: "POST",
       url: `http://localhost:3001/players`,
-      body: playerData,
+      data: playerData,
     });
     return data;
   } catch (err) {
@@ -40,9 +40,9 @@ export const addNewPlayer = async (playerData) => {
 export const updatePlayer = async (playerData, id) => {
   try {
     const { data } = await axios({
-      method: "POST",
+      method: "PuT",
       url: `http://localhost:3001/players/${id}`,
-      body: playerData,
+      data: playerData,
     });
     return data;
   } catch (err) {

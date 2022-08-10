@@ -1,3 +1,7 @@
+thead th {
+    font-weight: bold !important;
+}
+
 p {
     margin: 25px 0 10px !important;
     font-size: 2rem !important;

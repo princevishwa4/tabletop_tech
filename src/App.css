@@ -2,3 +2,9 @@
   margin: 0 !important;
   font-size: 0.8rem !important;
 }
+
+.heading {
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  text-align: center;
+}

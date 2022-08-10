@@ -1,11 +1,12 @@
 .edit_players .container {
     width: 50% !important;
-    padding: 10px 0 0 0;
+    padding: 20px;
     margin-bottom: 50px;
 }
 
 .edit_players .form_group > * {
-    margin: 20px 0 !important;
+    margin: 15px 0 !important;
+    text-align: left;
 }
 
 .edit_players .text {

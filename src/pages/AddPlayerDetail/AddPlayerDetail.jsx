@@ -14,6 +14,9 @@ import Select from "@mui/material/Select";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 
+// Routing imports
+import { useNavigate } from "react-router-dom";
+
 // External library imports
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -39,6 +42,7 @@ const AddPlayerDetail = () => {
     contact_numberErr: "",
     campaign_nameErr: "",
   });
+  let navigate = useNavigate();
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -121,6 +125,7 @@ const AddPlayerDetail = () => {
         draggable: true,
         progress: undefined,
       });
+      setTimeout(() => navigate("/", { replace: true }), 4000);
     } else {
       toast.error(`Please try again later.`, {
         position: "top-center",
@@ -148,7 +153,7 @@ const AddPlayerDetail = () => {
         pauseOnHover
       />
       <Box className="add_players">
-        <Typography className="text">Add New Player</Typography>
+        <Typography className="heading">Add New Player</Typography>
         <Container component={Paper} className="container" elevation={3}>
           <FormGroup component={Paper} className="form_group">
             <FormControl fullWidth>
@@ -196,13 +201,13 @@ const AddPlayerDetail = () => {
             </FormControl>
             <FormControl fullWidth>
               <InputLabel id="demo-simple-select-label">
-                Campaign Name
+                Game Session
               </InputLabel>
               <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
                 value={addPlayerDetail.campaign_name}
-                label="Campaign Name"
+                label="Game Session"
                 name="campaign_name"
                 onChange={handleChange}
               >

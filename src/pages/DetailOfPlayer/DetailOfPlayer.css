@@ -1,5 +1,6 @@
 .detail_of_players .container {
     width: 80%;
+    margin-bottom: 40px;
 }
 
 .detail_of_players .form_group>* {
@@ -7,17 +8,14 @@
 }
 
 .detail_of_players .child_contaner {
+    padding: 15px !important;
     display: flex !important;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .detail_of_players .item_container {
     max-width: 700px;
     width: 100%;
-}
-
-.detail_of_players .text {
-    height: 500px,
 }
 
 .detail_of_players .text>* {

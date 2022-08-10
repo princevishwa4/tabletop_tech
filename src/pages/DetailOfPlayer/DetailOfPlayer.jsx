@@ -40,7 +40,7 @@ const DetailOfPlayer = () => {
       <Box className="detail_of_players">
         <Typography className="heading">My Profile</Typography>
         <Container className="container">
-          <Grid container spacing={2} className="child_container">
+          <Grid container className="child_container">
             <Grid item className="item_container">
               <Item className="text">
                 <Typography className="text">
