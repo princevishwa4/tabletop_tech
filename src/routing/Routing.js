@@ -6,6 +6,7 @@ import Header from "../components/Header";
 
 // Pages imports
 import Home from "../pages/Home";
+import DetailOfPlayer from "../pages/DetailOfPlayer";
 
 const Routing = () => {
   return (
@@ -13,6 +14,7 @@ const Routing = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/profile/1" element={<DetailOfPlayer />} />
       </Routes>
     </>
   );

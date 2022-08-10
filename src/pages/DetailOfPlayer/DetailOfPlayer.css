@@ -1,0 +1,33 @@
+.container {
+    width: 80%;
+}
+
+.form_group>* {
+    margin: 20px 0 !important;
+}
+
+.child_contaner {
+    display: flex !important;
+    justify-content: space-between;
+}
+
+.item_container {
+    max-width: 700px;
+    width: 100%;
+}
+
+.text {
+    height: 500px,
+}
+
+.text>* {
+    margin-bottom: 10px !important;
+    font-size: 20px !important;
+    text-align: left;
+}
+
+.heading {
+    margin: 40px 0 !important;
+    font-size: 30px !important;
+    text-align: center;
+}
