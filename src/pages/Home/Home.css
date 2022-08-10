@@ -1,0 +1,10 @@
+p {
+    margin-top: 50px !important;
+    font-size: 2rem !important;
+}
+
+.datatable_wrapper {
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+}
